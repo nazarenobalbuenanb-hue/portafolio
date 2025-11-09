@@ -1,0 +1,134 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #003366);
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#title {
+  font-size: 3rem;
+  color: #00ffb3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+}
+
+#img-div {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 255, 179, 0.4);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+#img-div:hover {
+  transform: scale(1.02);
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#img-caption {
+  margin-top: 1rem;
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+#tribute-info {
+  text-align: justify;
+  line-height: 1.8;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: slideUp 1.5s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+#tribute-info h2, #tribute-info h3 {
+  text-align: center;
+  color: #00ffb3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0.5rem 0;
+  padding: 0.6rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 2rem 0;
+}
+
+.gallery img {
+  width: 30%;
+  min-width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 179, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+blockquote {
+  text-align: center;
+  font-style: italic;
+  color: #00ffb3;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  border-left: 4px solid #00ffb3;
+  padding-left: 1rem;
+}
+
+#tribute-link {
+  color: #00ffb3;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #00ffb3;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#tribute-link:hover {
+  background: #00ffb3;
+  color: #003366;
+  box-shadow: 0 0 15px rgba(0, 255, 179, 0.6);
+}
